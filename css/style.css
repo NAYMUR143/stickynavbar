@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: poppins;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 15px 16px;
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.container {
+  width: 100%;
+  background: url("../img/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+.content {
+  padding: 0px 70px;
+}
+.content h1,
+.content p {
+  color: #000;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0px 16px;
+  transition: 0.5s;
+  background: #fff;
+  color: #000;
+}
+.sticky .Plink li a {
+  color: #000;
+}
+
+.sticky .icon {
+  color: #000 !important;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 40% auto;
+  width: 90%;
+  margin: auto;
+}
+
+.Plink {
+  text-align: right;
+}
+
+.Plink li {
+  list-style: none;
+  display: inline-block;
+}
+
+.Plink li a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.Plink li a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav .Plink {
+    display: none;
+  }
+
+  .nav a.icon {
+    display: block;
+    text-align: right;
+    padding: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav .resnav {
+    position: relative;
+    display: block;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .nav .resnav li {
+    display: block;
+  }
+
+  .Plink li a {
+    padding: 14px 0px;
+    transition: 0.5s;
+  }
+
+  .Plink li a:hover {
+    padding: 14px 16px;
+  }
+
+  .nav .icon {
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .nav .resnav a {
+    display: block;
+    text-align: left;
+  }
+}
